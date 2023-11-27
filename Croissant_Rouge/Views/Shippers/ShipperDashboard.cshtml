@@ -1,0 +1,264 @@
+﻿@{
+    int userId = (int)Context.Session.GetInt32("userId");
+    string firstname = Context.Session.GetString("FirstName");
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+
+<style>
+
+    .arrow-icon::after {
+        content: "\f0dc"; /* Unicode for the right arrow in Font Awesome */
+        font-family: "Font Awesome 5 Free";
+        margin-left: 5px; /* Adjust as needed */
+    }
+
+    .rounded-corners {
+        border-radius: 5px;
+    }
+
+    .bg-orange {
+        background-color: orange;
+    }
+
+    .gradient-bg {
+        background: linear-gradient(to bottom, #F3E7F6, #F7EDEA); /* Adjust colors as needed */
+    }
+
+
+</style>
+
+@model ShipmentAndDonations
+@await Html.PartialAsync("_ShipperNav")
+
+
+<div style="text-align:center ; margin-bottom:20px ; margin-top:20px; ">
+    <h1 style="font-style:oblique ;">Welcome  @firstname </h1>
+</div>
+
+<div class="container ">
+
+
+
+    <h4>Search donation</h4>
+    <form action="" class="mb-5">
+        <div class="input-group mb-3">
+            <input oninput="searchTable()" id="text" type="text" class="form-control form-control-lg" placeholder="Search Here">
+            <button type="submit" class="input-group-text btn-danger"><i class="bi bi-search me-2"></i> Search</button>
+        </div>
+    </form>
+
+
+    <table class="table table-border mb-5   border gradient-bg   overflow-hidden rounded-corners ">
+        <thead class="bg-light">
+            <tr>
+
+                <th scope="col" onclick="sortTable(donationHeader)"   id="donationHeader" style="cursor: pointer">Donation <span class="arrow-icon"></span></th>
+                <th scope="col">Category</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Adress</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Donner</th>
+                <th scope="col">Shipper</th>
+
+            </tr>
+        </thead>
+        <tbody class="">
+
+            @foreach (var a in Model.Alldonations)
+            {
+                if (a.Shipment != null && a.Shipment.ShipStatus.ToString() != "Received" || a.Shipment == null)
+                {
+
+                    <tr>
+                        <td>
+
+
+                            <div class="d-flex align-items-center">
+                                <img src="@a.Picture"
+                                     alt=""
+                                     style="width: 45px; height: 45px"
+                                     class="rounded-circle" />
+                                <div class="ms-3">
+                                    <p class="fw-bold mb-1">@a.Title</p>
+
+                                </div>
+                            </div>
+                        </td>
+                        <td>@a.Category</td>
+                        <td>@a.Quantity</td>
+                        <td>@a.Donner.Address</td>
+                        <td>@a.Donner.Phone</td>
+                        <td>
+                            <a asp-action="ShippAll" asp-controller="Shippers" asp-route-donnerId="@a.UserId"
+                               onmouseover="moreSippments('@a.DonationId')" id="@a.DonationId"
+                               onmouseout="reset('@a.Donner.FirstName @a.Donner.LastName', '@a.DonationId')"
+                               class="h6 text-decoration-none">@a.Donner.FirstName @a.Donner.LastName</a>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-3">
+                                <div>
+
+                                    @if (a.Shipment == null)
+                                    {
+                                        Shipment newShippment = new()
+                                        {
+                                            UserId = userId,
+                                            DonationId = a.DonationId,
+                                        };
+                                        @await Html.PartialAsync("_ShipDonation", newShippment)
+                                    }
+                                </div>
+                                <div>
+
+                                    @if (@a.Shipment != null)
+                                    {
+
+                                        <form asp-action="AcceptShipping" asp-route-id="@a.Shipment.ShipmentId" asp-controller="Shippers" method="post">
+                                            <input type="hidden" name="ShipmentId">
+                                            <input type="image" src="~/uploads/received.png"
+                                                   alt=""
+                                                   style="width: 45px; height: 45px"
+                                                   class="rounded-circle" />
+                                        </form>
+
+                                    }
+                                </div>
+                            </div>
+                        </td>
+
+                    </tr>
+                }
+
+            }
+        </tbody>
+    </table>
+
+
+
+
+    <div style="text-align:center ; margin-bottom:20px ; margin-top:20px; ">
+        <h1 style="font-style:oblique ;">All Your Shipments </h1>
+    </div>
+
+    <table class="table border gradient-bg   overflow-hidden rounded-corners ">
+        <thead class="bg-light">
+            <tr>
+                <th scope="col">Donation</th>
+                <th scope="col">Category</th>
+                <th scope="col">Donator Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Adress</th>
+                <th scope="col">Quantity</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var a in Model.AllShippments)
+            {
+                <tr>
+
+                    <td>
+
+                        <div class="d-flex align-items-center">
+                            <img src="@a.Donation.Picture"
+                                 alt=""
+                                 style="width: 45px; height: 45px"
+                                 class="rounded-circle" />
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1">@a.Donation.Title</p>
+
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>@a.Donation.Category</td>
+                    <td>@a.Donation.Quantity</td>
+                    <td>@a.Donation.Donner.FirstName @a.Donation.Donner.LastName  </td>
+                    <td>@a.Donation.Donner.Address</td>
+                    <td>@a.Donation.Quantity</td>
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+</div>
+
+<script>
+    function moreSippments(id) {
+        var element = document.getElementById(id)
+        element.innerText = "More for this Donner"
+        element.className = "btn btn-info btn-sm"
+    }
+    function reset(text, id) {
+        var element = document.getElementById(id)
+        element.innerText = text
+        element.className = "h6 text-decoration-none"
+    }
+
+
+
+    function sortTable() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.querySelector(".table");
+        switching = true;
+
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+
+            for (i = 1; i < rows.length - 1; i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("td")[0]; // Change index if needed
+
+                if (x && x.nextElementSibling) {
+                    y = rows[i + 1].getElementsByTagName("td")[0]; // Change index if needed
+
+
+                    var xTitle = x.innerText.toLowerCase().trim();
+                    var yTitle = y.innerText.toLowerCase().trim();
+
+                    if (xTitle > yTitle) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    }
+
+    document.getElementById("donationHeader").addEventListener("click", function () {
+        sortTable();
+    });
+
+
+    function searchTable() {
+        const searchText = document.getElementById('text').value.toLowerCase();
+        const rows = document.querySelectorAll(".table tbody tr");
+
+        rows.forEach(row => {
+            const title = row.querySelector("td:nth-child(1)").innerText.toLowerCase();
+            if (title.includes(searchText)) {
+                row.style.display = "table-row";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    }
+ 
+
+    </script>

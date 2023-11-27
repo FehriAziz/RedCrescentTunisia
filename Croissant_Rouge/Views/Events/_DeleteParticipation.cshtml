@@ -1,0 +1,7 @@
+﻿@model Participation
+<form asp-action="DeleteParticipation" asp-controller="Events" method="post">
+    <input type="hidden" asp-for="@Model.ParticipationId">
+    <input type="hidden" asp-for="@Model.UserId">
+    <input type="hidden" asp-for="@Model.EventId">
+    <div class="apply-container"><button class="apply-button">Delete Participation</button></div>
+</form>

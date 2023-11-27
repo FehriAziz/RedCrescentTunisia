@@ -1,0 +1,78 @@
+﻿@model User
+@await Html.PartialAsync("_AdminNavbar")
+
+
+<div style="display:flex;justify-content:space-evenly">
+
+    <div class="card p-3" style="
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    overflow: hidden;
+                    text-align: center;
+                    position: relative;
+                    height:780px;
+                    width:1500px;
+                    background: url(https://shippr.io/blog/wp-content/uploads/2021/10/pexels-norma-mortenson-4391478-1-1-scaled-e1693467850599.jpg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-size: cover;
+                    background-position: center">
+
+        <div class="card mt-5 shadow w-50" style="background-color:transparent">
+            <h2 class="card-header" style="background-color:white">Create a Shipper</h2>
+            <div class="card-body mt-5 p-4">
+                <form asp-action="CreateShipper" asp-controller="Shippers" method="post">
+
+                    <div class="mb-4">
+                        <input placeholder="First Name" asp-for="FirstName" class="form-control">
+                        <span asp-validation-for="FirstName" class="form-text text-danger h4"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <input placeholder="Last Name" asp-for="LastName" class="form-control">
+                        <span asp-validation-for="LastName" class="form-text text-danger h4"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <input placeholder="Email" asp-for="Email" class="form-control">
+                        <span asp-validation-for="Email" class="form-text text-danger h4"></span>
+                    </div>
+                    <div class="mb-4">
+                        <input placeholder="Phone Number" asp-for="Phone" class="form-control">
+                        <span asp-validation-for="Phone" class="form-text text-danger h4"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <input placeholder="Address" asp-for="Address" class="form-control">
+                        <span asp-validation-for="Address" class="form-text text-danger h4"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <input placeholder="Password" asp-for="Password" class="form-control">
+                        <span asp-validation-for="Password" class="form-text text-danger h4"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <input placeholder="Confirm Password" asp-for="ConfirmPassword" class="form-control">
+                        <span asp-validation-for="ConfirmPassword" class="form-text text-danger h4"></span>
+                    </div>
+
+                    <div class="mb-5">
+                        <input type="hidden" asp-for="Role" Value="Shipper">
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Create Shipper" class="btn  btn-lg " style="background-color:#ff5044 ; color:white">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    @*     <div style="margin-top:150px">
+            <img src="~/uploads/shipper.png" alt="Shipper" style="border-radius:20% ; border:solid 5px #ff5044 ; height:450px" />
+        </div> *@
+</div>

@@ -1,0 +1,12 @@
+﻿@model Shipment
+
+
+
+<form asp-action="ShipDonation" asp-controller="Shippers" method="post">
+    <input type="hidden" asp-for="@Model.UserId">
+    <input type="hidden" asp-for="@Model.DonationId">
+    <input type="image" src="~/uploads/delivery_icon2.png"
+           alt=""
+           style="width: 45px; height: 45px"
+           class="rounded-circle" />
+</form>

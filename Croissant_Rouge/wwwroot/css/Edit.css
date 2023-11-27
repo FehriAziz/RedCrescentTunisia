@@ -1,0 +1,384 @@
+﻿@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Add this style for the card */
+.smtbox-card {
+    width: 50%;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #A9A9A9;
+    box-shadow: 0 4px 8px #A9A9A9;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+    /* Style the button inside the card */
+    .smtbox-card .smtbox-button--red {
+        border: 1px solid red;
+        background-color: red;
+        border-radius: 10px;
+        color: var(--white);
+        width: 40%;
+    }
+
+        .smtbox-card .smtbox-button--red:hover {
+            background-color: var(--white);
+            color: red;
+        }
+
+.smtbox-profile-form__input-text {
+    width: calc(100% - 16px); /* Adjust the input width as needed */
+}
+
+body {
+    /* background-color: red; */
+}
+
+:root {
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* Variables */
+    /* Colors */
+    --white: #FFFFFF;
+    --lightgray: #F7F7F7;
+    --gray: #BFBFBF;
+    --darkgray: #707070;
+    --blue: #414865;
+    --orange: #FF944B;
+    --smtbox-item-padding-x: 16px;
+    --user-card-image-margin-right: 32px;
+    --header-height: 64px;
+    --user-card-height: 160px;
+    --trade-title-height: 72px;
+    --user-points-height: calc(100vh - (var(--header-height) + var(--user-card-height)));
+}
+
+@media only screen and (max-width: 320px) {
+    :root {
+        --smtbox-item-padding-x: 8px;
+        --user-card-image-margin-right: 16px;
+    }
+}
+
+
+
+.smtbox-flex {
+    display: flex;
+}
+
+.smtbox-justify-center {
+    justify-content: center;
+}
+
+.smtbox-justify-between {
+    justify-content: space-between;
+}
+
+.smtbox-align-center {
+    align-items: center;
+}
+
+.smtbox-direction-column {
+    flex-direction: column;
+}
+
+.smtbox-container {
+    max-width: 70vw;
+    min-height: 80vh;
+    margin-left: 15%
+}
+
+
+
+.smtbox-fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.smtbox-header {
+    position: relative;
+    height: var(--header-height);
+}
+
+    .smtbox-header:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        z-index: -1;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+.smtbox-logo {
+    width: 112px;
+    height: 24px;
+}
+
+.smtbox-trade-title {
+    margin-top: var(--header-height);
+    height: var(--trade-title-height);
+}
+
+.smtbox-item {
+    padding: 8px var(--smtbox-item-padding-x);
+}
+
+.smtbox-container,
+.smtbox-header,
+.smtbox-redeem-popup,
+.smtbox-user-points-content__redeem-button:hover {
+    background-color: var(--white);
+}
+
+.smtbox-item:nth-child(odd) {
+    background-color: var(--lightgray);
+}
+
+.smtbox-user-points-content__redeem-button,
+.smtbox-user-card {
+    background-color: var(--blue);
+}
+
+    .smtbox-trade-title,
+    .smtbox-item__header__name,
+    .smtbox-item__header__id,
+    .smtbox-item__header__points,
+    .smtbox-item__details__redeemed-points,
+    .smtbox-item__details__id-number,
+    .smtbox-item__details__points-number,
+    .smtbox-user-points-content__brand,
+    .smtbox-user-points-content__total-points,
+    .smtbox-user-points-content__redeem-points:after,
+    .smtbox-user-points-content__redeem-button:hover,
+    .smtbox-profile-picture,
+    .smtbox-profile-form__label,
+    .smtbox-profile-upload-button {
+        color: var(--blue);
+    }
+
+.smtbox-user-card__id,
+.smtbox-user-card__name,
+.smtbox-user-points-content__redeem-button {
+    color: var(--white);
+}
+
+.smtbox-item__date__date,
+.smtbox-user-points-content__redeem-points,
+.smtbox-user-points-content__redeem-text,
+.smtbox-redeem-popup__text,
+.smtbox-user-points-content__total-points:after,
+.smtbox-profile-form__input-text {
+    color: var(--gray);
+}
+
+.smtbox-item__header,
+.smtbox-item__details,
+.smtbox-item__date {
+    height: 32px;
+}
+
+.smtbox-item__header__name,
+.smtbox-item__header__id,
+.smtbox-item__header__points {
+    font-size: 20px;
+}
+
+.smtbox-item__header__name,
+.smtbox-item__details__redeemed-points {
+    width: 200px;
+}
+
+.smtbox-item__header__id,
+.smtbox-item__header__points,
+.smtbox-item__details__id-number,
+.smtbox-item__details__points-number {
+    width: 107px;
+}
+
+.smtbox-item__header__points,
+.smtbox-item__details__points-number {
+    text-align: right;
+}
+
+.smtbox-user-card {
+    margin-top: var(--header-height);
+    height: var(--user-card-height);
+}
+
+.smtbox-user-card__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: var(--user-card-image-margin-right);
+}
+
+
+
+.smtbox-user-card__name {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.smtbox-user-card__id {
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.smtbox-user-points {
+    height: var(--user-points-height);
+    min-height: 400px;
+}
+
+.smtbox-user-points-content {
+    width: 80%;
+}
+
+.smtbox-user-points-content__brand {
+    height: 40px;
+    font-size: 18px;
+}
+
+
+
+.smtbox-user-points-content__brand,
+.smtbox-user-points-content__total-points,
+.smtbox-user-points-content__redeem-points,
+.smtbox-item__header__name,
+.smtbox-item__header__id,
+.smtbox-item__header__points,
+.smtbox-user-card__name,
+.smtbox-profile-picture,
+.smtbox-profile-form__label {
+    font-weight: bold;
+}
+
+
+.smtbox-user-points-content__total-points {
+    height: 80px;
+    font-size: 33px;
+}
+
+.smtbox-user-points-content__redeem-points {
+    border: 1px solid var(--darkgray);
+    height: 88px;
+    font-size: 42px;
+    width: 280px;
+}
+
+.smtbox-user-points-content__redeem-text {
+    margin-bottom: 64px;
+}
+
+
+
+.smtbox-user-points-content__total-points:after,
+.smtbox-user-points-content__redeem-points:after {
+    content: "PTS";
+    font-size: 22px;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+.smtbox-user-points-content__redeem-text {
+    min-height: 40px;
+    text-align: center;
+}
+
+.smtbox-user-points-content__redeem-button {
+    font-size: 20px;
+    width: 90px;
+    height: 50px;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    box-shadow: 0 7px 14px rgba(10, 2, 70, 0.13);
+}
+
+/* Revisar */
+
+/*.smtbox-button {
+	font-size: 20px;
+	width: 90px;
+	height: 50px;
+	border: 1px solid var(--blue);
+	border-radius: 10px;
+	box-shadow: 0 7px 14px rgba(10, 2, 70, 0.13);
+  }*/
+
+/*  .smtbox-button--orange {
+	border: 1px solid var(--orange);
+	background-color: var(--orange);
+	color: var(--white);
+	margin: 0 auto;
+  }*/
+
+.smtbox-button--orange:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    margin: 0 auto;
+}
+
+.smtbox-user-points-content__redeem-button:hover {
+    cursor: pointer;
+}
+
+.smtbox-redeem-popup-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(65, 72, 101, 0.5);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.smtbox-redeem-popup {
+    width: 90%;
+    height: 90%;
+}
+
+.smtbox-redeem-popup__check {
+    width: 124px;
+    height: 124px;
+    margin-bottom: 32px;
+}
+
+/* Profile Edit */
+
+.smtbox-profile-form {
+    width: 90%;
+}
+
+.smtbox-profile-form__input-text {
+    border: 1px solid var(--blue);
+}
+
+.smtbox-profile-form__input-text {
+    width: calc(100% - 32px);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.smtbox-profile-picture,
+.smtbox-profile-form__label {
+    margin-bottom: 8px;
+}
+
+.smtbox-profile-upload-button {
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+}
+
+.smtbox-profile-form,
+.smtbox-profile-upload-button,
+.smtbox-profile-form__input-text {
+    margin-bottom: 28px;
+}

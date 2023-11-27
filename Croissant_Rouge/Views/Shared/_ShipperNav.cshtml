@@ -1,0 +1,39 @@
+﻿@{
+    int? userId = Context.Session.GetInt32("userId");
+    var test = ViewData["test"] as string;
+}
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/ShipperNav.css" asp-append-version="true" />
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3  " >
+    <div class="container-fluid gap-3 ">
+        <img src="~/uploads/logo.png"
+             alt=""
+             style="width: 45px; height: 45px"
+             class="rounded-circle" />
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+             
+
+                <a asp-controller="Shippers" asp-action="ShipperDashboard" class="nav-item nav-link active">All the Shipments</a>
+            </div>
+
+
+
+                <div class="navbar-nav ms-auto">
+                    <form asp-action="Logout" asp-controller="Users" method="post">
+                        <input type="submit" value="Logout" class="btn  btn-lg">
+                    </form>
+                </div>
+
+
+
+        </div>
+    </div>
+</nav>

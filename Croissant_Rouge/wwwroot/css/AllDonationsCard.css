@@ -1,0 +1,163 @@
+﻿/*new css*/
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.body {
+    z-index: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card1 {
+    margin: 30px auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background: linear-gradient(rgb(253, 70, 90), rgb(31, 42, 147));
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card2 {
+    margin: 30px auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background: linear-gradient(#30de80, #139e8d);
+    cursor: pointer;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card3 {
+    margin: 30px auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background: linear-gradient(#fd5b13, #f22358);
+    cursor: pointer;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card4 {
+    margin: 30px auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background: linear-gradient(#c8dd59, #54ba4b);
+    cursor: pointer;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.card1 .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+    height: 40px;
+}
+
+.card2 .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+    height: 40px;
+}
+
+.card3 .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+    height: 40px;
+}
+
+.card4 .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+    height: 40px;
+}
+
+
+.card1:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.card2:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.card3:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.card4:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.title-white {
+    color: white;
+}
+
+
+
+.table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+h2 {
+    color: rgb(135, 44, 61);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-top: 5%;
+}
+
+.table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+    bottom: .5em;
+}
+
+.custom-search-bar {
+    width: 60px;
+}

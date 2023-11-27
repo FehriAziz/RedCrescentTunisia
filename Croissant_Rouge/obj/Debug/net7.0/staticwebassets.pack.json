@@ -1,0 +1,433 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/obj/Debug/net7.0/scopedcss/projectbundle/Croissant_Rouge.bundle.scp.css",
+      "PackagePath": "staticwebassets/Croissant_Rouge.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/AllDonationsCard.css",
+      "PackagePath": "staticwebassets/css/AllDonationsCard.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/BusinessCard.css",
+      "PackagePath": "staticwebassets/css/BusinessCard.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/Card.css",
+      "PackagePath": "staticwebassets/css/Card.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/CardHome1.css",
+      "PackagePath": "staticwebassets/css/CardHome1.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/CardMyProfile.css",
+      "PackagePath": "staticwebassets/css/CardMyProfile.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/Counter.css",
+      "PackagePath": "staticwebassets/css/Counter.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/CreateEvent.css",
+      "PackagePath": "staticwebassets/css/CreateEvent.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/Donate.css",
+      "PackagePath": "staticwebassets/css/Donate.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/Edit.css",
+      "PackagePath": "staticwebassets/css/Edit.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/Event.css",
+      "PackagePath": "staticwebassets/css/Event.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/Login.css",
+      "PackagePath": "staticwebassets/css/Login.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/OneDonation.css",
+      "PackagePath": "staticwebassets/css/OneDonation.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/Register.css",
+      "PackagePath": "staticwebassets/css/Register.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/ShipperNav.css",
+      "PackagePath": "staticwebassets/css/ShipperNav.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/ShipperSearch.css",
+      "PackagePath": "staticwebassets/css/ShipperSearch.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/eventUser.css",
+      "PackagePath": "staticwebassets/css/eventUser.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/js/Categories.js",
+      "PackagePath": "staticwebassets/js/Categories.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/js/Donate.js",
+      "PackagePath": "staticwebassets/js/Donate.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/js/Home.js",
+      "PackagePath": "staticwebassets/js/Home.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/js/ShipperNav.js",
+      "PackagePath": "staticwebassets/js/ShipperNav.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/0438a2aa-863a-450e-a24d-0265a0bb57c0.jpeg",
+      "PackagePath": "staticwebassets/uploads/0438a2aa-863a-450e-a24d-0265a0bb57c0.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/0940bc05-bd00-494b-a9c1-d893447b0bb8.jpeg",
+      "PackagePath": "staticwebassets/uploads/0940bc05-bd00-494b-a9c1-d893447b0bb8.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/22f4f1f3-b183-4c3b-8b8c-5ea1119b492c.jpeg",
+      "PackagePath": "staticwebassets/uploads/22f4f1f3-b183-4c3b-8b8c-5ea1119b492c.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/438195be-ac73-41aa-874d-9d92544560a1.jpg",
+      "PackagePath": "staticwebassets/uploads/438195be-ac73-41aa-874d-9d92544560a1.jpg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/49383128-fafd-4231-9954-3528c03768b7.jpeg",
+      "PackagePath": "staticwebassets/uploads/49383128-fafd-4231-9954-3528c03768b7.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/82989d81-8daf-466b-b9e6-b078a6437f91.jpeg",
+      "PackagePath": "staticwebassets/uploads/82989d81-8daf-466b-b9e6-b078a6437f91.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/86ca656f-94d0-4694-8b4f-dc35ae8e7bbe.jpeg",
+      "PackagePath": "staticwebassets/uploads/86ca656f-94d0-4694-8b4f-dc35ae8e7bbe.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/8a68e1a6-ec3c-4552-bce3-0f1d332deb59.jpeg",
+      "PackagePath": "staticwebassets/uploads/8a68e1a6-ec3c-4552-bce3-0f1d332deb59.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/NoResult.png",
+      "PackagePath": "staticwebassets/uploads/NoResult.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/NotFound.png",
+      "PackagePath": "staticwebassets/uploads/NotFound.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/accepte.png",
+      "PackagePath": "staticwebassets/uploads/accepte.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/b0c23637-d689-4140-a1cf-984a434717f1.jpeg",
+      "PackagePath": "staticwebassets/uploads/b0c23637-d689-4140-a1cf-984a434717f1.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/bfe28061-6799-476a-abeb-02307c168473.jpeg",
+      "PackagePath": "staticwebassets/uploads/bfe28061-6799-476a-abeb-02307c168473.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/delivery.jpeg",
+      "PackagePath": "staticwebassets/uploads/delivery.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/delivery_icon2.png",
+      "PackagePath": "staticwebassets/uploads/delivery_icon2.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/event.jpeg",
+      "PackagePath": "staticwebassets/uploads/event.jpeg"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/logo.png",
+      "PackagePath": "staticwebassets/uploads/logo.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/noship.png",
+      "PackagePath": "staticwebassets/uploads/noship.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/received.png",
+      "PackagePath": "staticwebassets/uploads/received.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/refuse.png",
+      "PackagePath": "staticwebassets/uploads/refuse.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/shipper.png",
+      "PackagePath": "staticwebassets/uploads/shipper.png"
+    },
+    {
+      "Id": "/Users/macbookair/Desktop/Code/Final_Croissant/Croissant_Rouge/wwwroot/uploads/userimg.jpeg",
+      "PackagePath": "staticwebassets/uploads/userimg.jpeg"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Croissant_Rouge.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.Croissant_Rouge.props",
+      "PackagePath": "build\\Croissant_Rouge.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Croissant_Rouge.props",
+      "PackagePath": "buildMultiTargeting\\Croissant_Rouge.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Croissant_Rouge.props",
+      "PackagePath": "buildTransitive\\Croissant_Rouge.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

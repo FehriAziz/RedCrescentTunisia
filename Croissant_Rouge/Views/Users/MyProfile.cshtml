@@ -1,0 +1,110 @@
+﻿@model List<Donation>
+
+<!DOCTYPE html>
+<html>
+@await Html.PartialAsync("_UserNav")
+<head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="~/css/CardMyProfile.css" asp-append-version="true" />
+
+</head>
+
+<body style="background-color:#f4f4f4">
+    <div class="container ">
+
+
+
+        <h1 class="text-danger">My Donations :</h1>
+
+
+
+        @if (Model.Count() == 0)
+        {
+            <img style="width:700px ; margin-left:24%;" src="~/uploads/NotFound.png" />
+
+
+        }
+
+
+
+        <div class="d-flex flex-wrap">
+
+            @foreach (Donation donnation in Model)
+            {
+                <article class="card card--1">
+                    <div class="card__info-hover">
+                        <svg class="card__like" viewBox="0 0 24 24">
+                            <!-- SVG Path Content -->
+                        </svg>
+                        <div class="card__clock-info">
+                            <svg class="card__clock" viewBox="0 0 24 24">
+                                <!-- SVG Path Content -->
+                            </svg>
+                        </div>
+                    </div>
+                    <img style="
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                            overflow: hidden;
+                            text-align: center;
+                            position: relative;
+                            height:400px;
+                            width:410px;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center"
+                         src="@donnation.Picture" alt="@donnation.Title">
+                    <div class="card__img--hover"></div>
+                    <div class="card__info">
+                        <div>
+                            <p class="card-text">Title: @donnation.Title <span class="text-muted"></span></p>
+                            <p class="card-text">Quantity: @donnation.Quantity <span class="text-muted"></span></p>
+                            <p class="card-text">Category: @donnation.Category <span class="text-muted"></span></p>
+
+                            @if (donnation.status.ToString() == "Unvalid")
+                            {
+                                <div class="progress mt-2 mb-3 ">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h5>Hello @donnation.Donner.FirstName please wait to validate your donnation !!</h5>
+                            }
+                            else
+                            {
+                                if (donnation.Shipment is null)
+                                {
+                                    <div class="progress mt-2 mb-3 ">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h5>Hello @donnation.Donner.FirstName  your donnation is valid. Please wait for our shipper !!</h5>
+                                }
+                                else
+                                {
+                                    if (donnation.Shipment.ShipStatus.ToString() == "InShipping")
+                                    {
+                                        <div class="progress mt-2 mb-3 ">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <h5>Hello @donnation.Donner.FirstName your donnation is valid. The shipper @donnation.Shipment.Shipper.FirstName on  his way to you !!</h5>
+                                    }
+                                    else
+                                    {
+                                        <div class="progress mt-2 mb-3 ">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <h5>Hello @donnation.Donner.FirstName we resived your donnation. Thank you !!</h5>
+                                    }
+                                }
+                            }
+                        </div>
+                    </div>
+                </article>
+            }
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

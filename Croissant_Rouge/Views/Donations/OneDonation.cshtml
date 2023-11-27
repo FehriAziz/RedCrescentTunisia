@@ -1,0 +1,78 @@
+﻿@{
+    int UserIdFromSession = (int)Context.Session.GetInt32("userId");
+}
+@model Donation
+@await Html.PartialAsync("_AdminNavBar")
+
+
+<link rel="stylesheet" href="~/css/OneDonation.css" asp-append-version="true" />
+
+
+
+
+<body>
+    <div class="wrapper">
+
+        <div class="product-img">
+            <img src="@Model.Picture" alt="@Model.Title" height="420" width="327">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>@Model.Title</h1>
+                <h2>Donation By :  @Model.Donner.FirstName</h2>
+                <p style="margin-bottom:20px">Quantity:@Model.Quantity </p>
+                <p> Description: @Model.Description </p>
+            </div>
+            <div class="product-price-btn">
+
+
+                <div class="d-flex gap-3" style="  margin: 210px 50px 0 30px;
+    display: inline-block;
+    height: 50px;
+    width: 176px;">
+
+                    <button><a href="/Donations" style="color: white; text-decoration: none">Cancel</a></button>
+                    <form asp-action="ValidateDonation" asp-route-donationId="@Model.DonationId" asp-controller="Donations" method="post">
+                        <input type="hidden" name="donationId" value="@Model.DonationId">
+                        <input type="submit" value="Accepte" style="    height: 50px;
+    width: 125px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #F4BF96;
+    cursor: pointer;
+    outline: none;">
+                    </form>
+                    <form asp-action="DeleteDonation" asp-controller="Donations" method="post">
+                        <input type="hidden" name="donationId" value="@Model.DonationId">
+                        <input type="submit" value="Refuse" style="    height: 50px;
+    width: 125px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #9f010c;
+    cursor: pointer;
+    outline: none;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+

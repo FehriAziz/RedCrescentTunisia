@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Croissant_Rouge.props" />
+</Project>

@@ -1,0 +1,157 @@
+﻿@{
+    int? userId = Context.Session.GetInt32("userId");
+}
+
+
+
+<style>
+
+    .custom-btn {
+        width: 250px;
+        height: 50px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: Roboto,Arial,Helvetica Neue,Helvetica,sans-serif;
+        font-weight: 900;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        text-align: center;
+    }
+
+
+
+
+
+
+    /* 13 */
+    .btn-13 {
+        background-color: #e3001b;
+        background-image: linear-gradient(315deg, #e3001b 0%, #aa0f19 74%);
+        border: none;
+        z-index: 1;
+    }
+
+
+
+
+
+    .navbar-nav {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        font-family: Sans-serif Arial Verdana Helvetica;
+    }
+
+    .nav-item {
+        margin-right: 15px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .dropdown-item {
+        display: block;
+        padding: 5px;
+        color: #333;
+        text-decoration: none;
+    }
+
+        .dropdown-item:hover {
+            background-color: #f0f0f0;
+        }
+</style>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/ShipperNav.css" asp-append-version="true" />
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow  position-top  top:0 width:100% mb-3">
+        <div class="container-fluid">
+            <img src="~/uploads/logo.png"
+                 alt=""
+                 style="width: 70px; height: 70px"
+                 class="rounded-circle" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
+                <ul class="navbar-nav flex-grow-1 " style="margin-left:30px">
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark" style=" font-size: 1.2rem" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" style=" font-size: 1.2rem" asp-area="" asp-controller="Users" asp-action="Categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" style=" font-size: 1.2rem" asp-area="" asp-controller="Events" asp-action="AllEvents">Events</a>
+                    </li>
+
+                </ul>
+                @if (userId.HasValue)
+                {
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link  custom-btn btn-13" style="color:white ;font-size: 1.2rem" asp-area="" asp-controller="Donations" asp-action="Donate">Contribute Now</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" style=" font-size: 1.2rem" asp-area="" asp-controller="Users" asp-action="MyProfile">
+
+                                My Profile
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                                <a class="nav-link text-dark" style=" font-size: 1.2rem" asp-area="" asp-controller="Users" asp-action="EditProfile">Edit Profil</a>
+                            </div>
+
+
+                        </li>
+                        <li class="nav-item">
+                            <form asp-action="Logout" asp-controller="Users" style=" font-size: 1.2rem" method="post">
+            
+                                <input type="submit" value="Logout" class="nav-link text-dark" style="background-color:white; border:hidden ;font-weight:400">
+                            </form>
+                        </li>
+                    </ul>
+
+
+                }
+                else
+                {
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style=" font-size: 1.2rem" asp-area="" asp-controller="Users" asp-action="Login">Login</a>
+                        </li>
+                    </ul>
+
+                }
+
+            </div>
+        </div>
+    </nav>
+</header>

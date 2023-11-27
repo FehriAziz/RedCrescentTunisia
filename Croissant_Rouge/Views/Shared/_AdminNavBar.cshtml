@@ -1,0 +1,53 @@
+﻿
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/ShipperNav.css" asp-append-version="true" />
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <img src="~/uploads/logo.png"
+                 alt=""
+                 style="width: 45px; height: 45px"
+                 class="rounded-circle" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Donations" asp-action="AllDonations">All Donations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Shippers" asp-action="CreateShipper">Create Shipper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Shippers" asp-action="ShipperList">Our Shippers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="CreateEvent">Create Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="AllEvents">Our Events</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <form asp-action="Logout" asp-controller="Users" method="post">
+                    <input type="submit" value="Logout" class="btn btn-Link btn-lg">
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+

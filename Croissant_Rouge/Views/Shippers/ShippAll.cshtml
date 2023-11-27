@@ -1,0 +1,93 @@
+﻿@model DonationandUser
+@{
+
+    int userId = (int)Context.Session.GetInt32("userId");
+}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/ShipperSearch.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/BusinessCard.css" asp-append-version="true" />
+</head>
+
+@await Html.PartialAsync("_ShipperNav")
+
+         
+<div class="container mt-5 d-flex">
+
+
+
+
+        <div class="container py-2 col-lg-8">
+            @foreach (var a in Model.Alldonations)
+            {
+
+                <article class="postcard bechir-gradient  " >
+                    <a class="postcard__img_link"  href="#">
+                        <img class="postcard__img" style="height:100%" src="@a.Picture" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text t-dark text-center">
+                        <h1 class="postcard__title red"><h2 href="#">@a.Title</h2></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>@a.CreatedAt
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">@a.Description</div>
+                        @{
+
+                            Shipment newShippments = new()
+                            {
+                                UserId = (int)Context.Session.GetInt32("userId"),
+                                DonationId = a.DonationId,
+                            };
+                            @await Html.PartialAsync("_ShipDonation", newShippments)
+                        }
+                    </div>
+                </article>
+            }
+
+        </div>
+
+    <div class="container col-lg-4">
+        <section class="mx-auto my-5" style="max-width: 23rem;">
+
+            <div class="card testimonial-card  mt-2 mb-3">
+                <div class="card-up aqua-gradient"></div>
+                <div class="avatar mx-auto white">
+                    <img src="~/uploads/userimg.jpeg" class="rounded-circle img-fluid"
+                         alt="woman avatar">
+                </div>
+                <div class="card-body text-center">
+                    <ul style="list-style: none;">
+                        <li>
+                            <h4 class="card-title font-weight-bold">@Model.User.FirstName @Model.User.LastName</h4>
+                        </li>
+                        <li>
+                            <h5>
+                                <i class="bi bi-telephone-fill"></i> @Model.User.Phone <!-- Bootstrap phone icon -->
+                            </h5>
+                        </li>
+                        <li>
+                            <h5>
+                                <i class="bi bi-geo-alt-fill"></i> @Model.User.Address <!-- Bootstrap address icon -->
+                            </h5>
+                        </li>
+                    </ul>
+                    <hr>
+                    <form asp-action="ShipManyDonations" asp-controller="Shippers" method="post">
+                        <input type="submit" class="btn btn-outline-primary btn-lg" value="Ship All Donations" />
+                        <input type="hidden" asp-for="@Model.Alldonations" name="donations" />
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+</div>
+
+
+

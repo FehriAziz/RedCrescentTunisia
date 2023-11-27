@@ -1,0 +1,226 @@
+﻿@model MoneyandDonation
+@await Html.PartialAsync("_AdminNavbar")
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="~/css/AllDonationsCard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/.css" asp-append-version="true" />
+
+    <style>
+        /* Custom class for border-radius */
+        .rounded-corners {
+            border-radius: 5px;
+        }
+
+        .bg-orange {
+            background-color: orange;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(to bottom, #F3E7F6, #F7EDEA);
+            /* Adjust colors as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards-list">
+        <!-- Card 1 -->
+        <div class="card1">
+            <div class="card_image" style="width: 10%; height: 10%;">
+            </div>
+            <div class="card_title title-white">
+                <p>Our Donors</p>
+                <p>@Model.Allusersrole.Where(r => r.Role.ToString() == "User").Count()</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card2">
+            <div class="card_image">
+                <img src="" />
+            </div>
+            <div class="card_title title-white">
+                <p>Our Shippers</p>
+                <p>@Model.Allusersrole.Where(r => r.Role.ToString() == "Shipper").Count()</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card3">
+            <div class="card_image">
+                <img />
+            </div>
+            <div class="card_title title-white">
+                <p>Total Donations</p>
+                <p>@Model.Alldonations.Count()</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card4">
+            <div class="card_image">
+                <img />
+            </div>
+            <div class="card_title title-white">
+                <p>Total Amount </p>
+                <p>@ViewBag.TotalAmountDonated DT</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <h2>All Donations</h2>
+
+
+        <table class="table table-border mb-5   border gradient-bg   overflow-hidden rounded-corners ">
+            <thead>
+                <tr>
+                    <th>Donation</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Donor</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Donation donation in Model.Alldonations.Where(s => s.status == Croissant_Rouge.Utility.StaticData.Status.Unvalid))
+                {
+                    <tr class="text-center">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="@donation.Picture"
+                                     alt=""
+                                     style="width: 45px; height: 45px"
+                                     class="rounded-circle" />
+                                <div class="ms-3">
+                                    <a href="donations/@donation.DonationId" class="fw-bold mb-1">@donation.Title</a>
+
+                                </div>
+
+                        </td>
+                        <td>@donation.Category</td>
+                        <td>@donation.Quantity</td>
+                        <td>@donation.Donner.FirstName @donation.Donner.LastName</td>
+                        <td>@donation.Donner.Address</td>
+                        <td>@donation.Donner.Phone</td>
+                        <td class="d-flex justify-content-between h-100">
+
+
+                            <form asp-action="ValidateDonation" asp-route-donationId="@donation.DonationId" asp-controller="Donations" method="post">
+                                <input type="hidden" name="donationId" value="@donation.DonationId">
+                                <input type="image" src="~/uploads/accepte.png"
+                                       alt=""
+                                       style="width: 30px; height: 30px"
+                                       class="rounded-circle" />
+                            </form>
+
+                            <form asp-action="DeleteDonation" asp-controller="Donations" method="post">
+                                <input type="hidden" name="donationId" value="@donation.DonationId">
+                                <input type="image" src="~/uploads/refuse.png"
+                                       alt=""
+                                       style="width: 30px; height: 30px"
+                                       class="rounded-circle" />
+                            </form>
+
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <h2>All Accepted Donations</h2>
+        <table class="table table-border mb-5   border gradient-bg   overflow-hidden rounded-corners">
+            <thead>
+                <tr>
+                    <th>Donation</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Doner</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Shipper</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Donation donation in Model.Alldonations.Where(s => s.status == Croissant_Rouge.Utility.StaticData.Status.Valid))
+                {
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="@donation.Picture"
+                                     alt=""
+                                     style="width: 45px; height: 45px"
+                                     class="rounded-circle" />
+                                <div class="ms-3">
+                                    <p class="fw-bold mb-1">@donation.Title</p>
+
+                                </div>
+
+                        </td>
+
+                        <td>@donation.Category</td>
+                        <td>@donation.Quantity</td>
+                        <td>@donation.Donner.FirstName</td>
+                        <td>@donation.Donner.Address</td>
+                        <td>@donation.Donner.Phone</td>
+                        @if (@donation.Shipment != null)
+                        {
+                            <td>@donation.Shipment.Shipper.FirstName</td>
+
+                            @if (@donation.Shipment.ShipStatus == Croissant_Rouge.Utility.StaticData.ShipStatus.InShipping)
+                            {
+
+
+                                <td>
+                                    <span class="badge py-2 px-3 bg-orange rounded-pill text-uppercase">
+                                        In Shipping
+                                    </span>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <span class="badge py-2 px-3 bg-success rounded-pill text-uppercase">
+                                        Received
+                                    </span>
+                                </td>
+
+                            }
+
+                        }
+                        else
+                        {
+                            <td>
+                                <img src="~/uploads/noship.png"
+                                     alt=""
+                                     style="width: 45px; height: 45px"
+                                     class="rounded-circle" />
+                            </td>
+                            <td>
+                                <img src="~/uploads/noship.png"
+                                     alt=""
+                                     style="width: 45px; height: 45px"
+                                     class="rounded-circle" />
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <script src="~/js/table.js"></script>
+</body>
+</html>

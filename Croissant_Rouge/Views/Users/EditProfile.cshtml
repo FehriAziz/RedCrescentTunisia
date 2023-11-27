@@ -1,0 +1,58 @@
+﻿@model User
+<!DOCTYPE html>
+<html>
+@await Html.PartialAsync("_UserNav")
+
+<link rel="stylesheet" href="~/css/Edit.css" asp-append-version="true" />
+
+
+
+<div class="smtbox-flex smtbox-align-center smtbox-direction-column smtbox-container">
+
+
+    <div class="smtbox-flex smtbox-justify-center smtbox-align-center smtbox-trade-title">
+        <h1>Edit Profile</h1>
+    </div>
+
+    <div class="smtbox-card smtbox-profile-form">
+        <form asp-action="EditProfile2" asp-controller="Users" method="post">
+
+            <label class="smtbox-profile-form__label">
+                First Name :
+            </label>
+
+            <input class="smtbox-profile-form__input-text" type="text" name="FirstName" value="@Model.FirstName">
+            <span asp-validation-for="FirstName" class="text-danger h4"></span>
+
+            <label class="smtbox-profile-form__label">
+                Last Name :
+            </label>
+            <input class="smtbox-profile-form__input-text" type="text" name="LastName" value="@Model.LastName">
+            <span asp-validation-for="LastName" class="text-danger h4"></span>
+            <label class="smtbox-profile-form__label">
+                Email :
+            </label>
+            <input class="smtbox-profile-form__input-text" type="email" name="Email" value="@Model.Email">
+            <span asp-validation-for="Email" class="text-danger h4"></span>
+
+            <label class="smtbox-profile-form__label">
+                Phone :
+            </label>
+            <input class="smtbox-profile-form__input-text" type="text" name="Phone" value="@Model.Phone">
+            <span asp-validation-for="Phone" class="text-danger h4"></span>
+
+            <label class="smtbox-profile-form__label">
+                Address :
+            </label>
+            <input class="smtbox-profile-form__input-text" type="text" name="Address" value="@Model.Address">
+            <span asp-validation-for="Address" class="text-danger h4"></span>
+
+
+            <div class="smtbox-flex smtbox-justify-center smtbox-align-center">
+                <input type="hidden" name="UserId" value="@Model.UserId" />
+                <input type="submit" value="Update" class="btn w-75 smtbox-button--red">
+            </div>
+        </form>
+    </div>
+
+</div>
